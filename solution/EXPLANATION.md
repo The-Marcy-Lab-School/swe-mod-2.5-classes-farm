@@ -13,6 +13,8 @@ Crop (base class)
 Farm (independent class)
 
 Farmer (independent class, has-a relationship with Farm)
+
+App (orchestrator class that creates a CLI-based user interface that handles user inputs.)
 ```
 
 ## Key OOP Concepts Demonstrated
