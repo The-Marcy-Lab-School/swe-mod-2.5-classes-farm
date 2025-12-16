@@ -8,8 +8,7 @@ const Kale = require('./Kale');
 const Tomato = require('./Tomato');
 const Grain = require('./Grain');
 
-const farmerAda = new Farmer('Ada');
-farmerAda.startFarm('Stardew Valley');
+const farmerAda = new Farmer('Ada', 'Stardew Valley');
 
 const kale = new Kale('Lacinato');
 const tomato = new Tomato('Cherry');

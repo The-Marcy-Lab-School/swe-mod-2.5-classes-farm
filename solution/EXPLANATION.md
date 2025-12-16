@@ -1,5 +1,7 @@
 # OOP Concepts and Class Structure
 
+UML Diagram: https://docs.google.com/drawings/d/1IQBy7Eg5rmJoN9yxYKm-oNkiGc7NIwOHgIeBwevvrx4/edit?usp=sharing
+
 This solution implements a farming simulation with the following class hierarchy:
 
 ```

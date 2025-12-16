@@ -1,8 +1,8 @@
 const Crop = require('./Crop');
 
 class Tomato extends Crop {
-  constructor(variety) {
-    super(`${variety} Tomato`, 2, '🍅')
+  constructor() {
+    super('Tomato', 2, '🍅')
   }
 }
 

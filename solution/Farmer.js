@@ -1,12 +1,8 @@
 const Farm = require('./Farm');
 
 class Farmer {
-  constructor(name) {
+  constructor(name, farmName) {
     this.name = name;
-    this.farm = null;
-  }
-
-  startFarm(farmName) {
     this.farm = new Farm(farmName);
   }
 

@@ -6,14 +6,17 @@ const farmerAda = {
   farm: {
     name: 'Stardew Valley',
     plot: [
-      [null, null, null, null, null],
-      [null, null, null, null, null],
-      [null, null, null, null, null],
-      [null, null, null, null, null],
-      [null, null, null, null, null],
+      // 1    2.    3.    4.     5
+      [null, null, null, null, null], // 1
+      [null, null, null, null, null], // 2
+      [null, null, null, null, null], // 3
+      [null, null, null, null, null], // 4
+      [null, null, null, null, null], // 5
     ],
   }
 }
+
+// Q: How would you access the second row of this plot? How would you access the 2nd row and third column?
 
 const plantCrop = (farm, crop) => {
   // look for the first row with a null space
@@ -26,6 +29,8 @@ const plantCrop = (farm, crop) => {
   // get the first column in that row that is null
   const column = farm.plot[row].indexOf(null);
 
+  // Then, put the crop in that location. 
+  // Q: Why do we add 1 to the row and column when printing the message for the user?
   console.log(`planting ${crop.species} at row ${row + 1}, column ${column + 1}`);
   farm.plot[row][column] = crop;
 }
@@ -33,9 +38,11 @@ const plantCrop = (farm, crop) => {
 const printFarm = (farm) => {
   console.log(`⚪️ 1 2 3 4 5`); // header row
   farm.plot.forEach((row, i) => {
+    // Get an array of icons for each crop (or a blank icon if we have a null spot)
     const cropIcons = row.map((crop) => {
       return crop ? crop.icon : '⚪️';
     });
+    // Print the row 
     console.log(`${i + 1}: ${cropIcons.join('')}`);
   });
 }
